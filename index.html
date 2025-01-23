@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Obteniendo elementos HTML para su manipulación</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-container">
+        <h2>Registro de Usuario</h2>
+        <form id="formulario">
+          <label for="nombre" id="labelNombre">Nombre:</label>
+          <input type="text" id="nombre" placeholder="Ingresa tu nombre" />
+
+          <label for="email" id="labelEmail">Email:</label>
+          <input type="text" id="email" placeholder="Ingresa tu email" />
+
+          <label for="telefono" id="labelTelefono">Teléfono:</label>
+          <input type="text" id="telefono" placeholder="Ingresa tu teléfono" />
+
+          <label for="comentarios" id="labelComentarios">Comentarios:</label>
+          <textarea
+            id="comentarios"
+            placeholder="Escribe tus comentarios"
+          ></textarea>
+
+          <label for="pais" id="labelPais">País:</label>
+          <select id="pais">
+            <option value="">Seleccione un país</option>
+            <option value="México">México</option>
+            <option value="España">España</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Chile">Chile</option>
+          </select>
+
+          <div>
+            <label id="labelIntereses">Intereses:</label><br />
+            <input type="checkbox" id="interes1" value="Deportes" /> Deportes
+            <input type="checkbox" id="interes2" value="Tecnología" />
+            Tecnología <input type="checkbox" id="interes3" value="Arte" /> Arte
+            <input type="checkbox" id="interes4" value="Música" /> Música
+            <input type="checkbox" id="interes5" value="Cine" /> Cine
+          </div>
+
+          <button type="button" id="submitBtn" class="boton-verde">Registrar</button>
+        </form>
+      </div>
+      <div class="table-container">
+        <h2>Usuarios Registrados</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Email</th>
+              <th>Teléfono</th>
+              <th>País</th>
+              <th>Borrar</th>
+            </tr>
+          </thead>
+          <tbody id="userTable">
+          </tbody>
+        </table>
+        <button id="botonBorrarAll" class="boton-rojo hidden">Eliminar todos los Registros</button>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

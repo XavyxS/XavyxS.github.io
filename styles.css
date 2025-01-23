@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  font-size: 16px;
+  padding: 20px;
+  background-color: #000033;
+}
+
+.valido {
+  font-weight: bold;
+  border: 2px solid green;
+  color: green;
+}
+.invalido {
+  font-weight: bold;
+  border: 2px solid red;
+  color: red;
+}
+.label-valido {
+  font-weight: bold;
+  color: green;
+}
+.label-invalido {
+  font-weight: bold;
+  color: red;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #f8f8f8;
+  border: 5px solid black;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-container,
+.table-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-container{
+  width: 35%;
+}
+
+.table-container {
+  width: 65%;
+}
+
+#formulario {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+form input, form select, form textarea, button {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+button {
+  margin-top: 15px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.5); 
+}
+
+.boton-verde {
+  background-color: #4CAF50;
+}
+
+.boton-verde:hover {
+  background-color: #27702b;
+}
+
+.boton-rojo {
+  background-color: #f44336;
+}
+
+.boton-rojo:hover {
+  background-color: #941212;
+}
+
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 1px 7px;
+  vertical-align: middle; 
+}
+
+.celda-boton{
+  display: flex;
+  justify-content: center;
+}
+
+.hidden{
+  display: none;
+}
+
